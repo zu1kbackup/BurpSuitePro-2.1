@@ -1,25 +1,21 @@
-## BurpSuitePro-2020.4.1
+## BurpSuitePro-2020.2
 
-> **破解BurpSuitePro-2020.4.1版本**
+> **破解BurpSuitePro-2020.2版本**
 
-- **[Mega - Pro jar包](https://mega.nz/file/PJ0H3JIL#H7Lc0spRbNd3k8W6MQz0dBivQGKlO2MM3UuNbfK5kZ4)**
+- **[52爱盘下载 - zip包](https://down.52pojie.cn/Tools/Network_Analyzer/)**
 
-- **[Zippy - Pro jar包](https://www89.zippyshare.com/v/vtwIvMFu/file.html)**
+- **[百度云下载- zip包](https://pan.baidu.com/s/1EXfiqdBB6Kssf58COlfG0Q)** *提取码：jo4n*
 
-- **[Mega - zip包](https://mega.nz/file/SVUFSQgQ#osze1oItI_MBXNSIFoF3psYpHR3Rl6OCPfdo2Jc0jRc)** *解压密码：mrxn.net*
-
-- **[微云 - zip包](https://share.weiyun.com/i0u9iepi)**
-
-- **[百度云 - zip包](https://pan.baidu.com/s/1KQMBtxZxAxXRZ55aB81f4w)** *提取码：miku*
+- **[115网盘- zip包](https://115.com/s/sw3k0t736qr)** *访问码：ue14*
 
 > **Win使用 (当然不安装官方包也可以，直接执行-jar jar包)**
 
   ```
-  0-x-Ai大佬的loader不带keygen，激活keygen得用旧版本，支持Java9-Java13
+  0-Pro 2020.2的加载补丁必须JDK8(只因大佬用的Java8，高版本Java换用ClassFileTransformer或其他什么技术手段来完成Patch)。。。
   1-在BurpSuite官网，下载Community版本的安装包
   2-把pro版的jar包，改名为burpsuite_community.jar，并替换软件安装目录下的burpsuite_community.jar
-  3-启动旧版loader(loader用java 13.0.2无任何问题，如果之前已经激活过，直接进行第4步即可)
-  Powershell：java -jar "C:\Program Files\BurpSuiteCommunity\2020_2_1-burp-loader-helper.jar"
+  3-打开burp-loader-helper.jar
+  Powershell：java -jar "C:\Program Files\BurpSuiteCommunity\2020_2-burp-loader-helper.jar"
 
   4-打开burpsuite_community.jar
   Powershell：java -noverify -javaagent:"C:\Program Files\BurpSuiteCommunity\burp-loader-helper.jar" -Xmx2048m -jar "C:\Program Files\BurpSuiteCommunity\burpsuite_community.jar"
@@ -45,15 +41,15 @@
 > **Linux使用 (当然不安装官方包也可以，直接执行-jar jar包)**
 
   ```
-  0-x-Ai大佬的loader不带keygen，激活keygen得用旧版本，支持Java9-Java13
+  0-2020.2的加载补丁，不支持openjdk-11.0.5，下载一个openjdk-8先用着;
   1-在BurpSuite官网，下载Community版本的sh文件;
-  2-安装"sudo bash burpsuite_community_linux_v2020_4_1.sh"
+  2-安装"sudo bash burpsuite_community_linux_v2020_2.sh"
   3-把pro版的jar包，改名为burpsuite_community.jar，并替换软件安装目录下的burpsuite_community.jar
-  4-启动旧版loader(loader用java 13.0.2无任何问题，如果之前已经激活过，直接进行第5步即可)
-  /usr/lib/jvm/java-13-openjdk-amd64/bin/java -jar 2020_2_1-burp-loader-helper.jar
+  4-启动burp-loader-helper.jar
+  /usr/lib/jvm/java-8-openjdk-amd64/bin/java -jar 2020_2-burp-loader-helper.jar
 
   5-启动BurpSuiteCommunity
-  /usr/lib/jvm/java-13-openjdk-amd64/bin/java -Dfile.encoding=utf-8 -noverify -javaagent:/opt/BurpSuiteCommunity/burp-loader-helper.jar -Xmx2048m -jar /opt/BurpSuiteCommunity/burpsuite_community.jar
+  /usr/lib/jvm/java-8-openjdk-amd64/bin/java -Dfile.encoding=utf-8 -noverify -javaagent:/opt/BurpSuiteCommunity/burp-loader-helper.jar -Xmx2048m -jar /opt/BurpSuiteCommunity/burpsuite_community.jar
 
   6-取消协助，同意协议
   7-随意修改burp-loader-helper的License Text
