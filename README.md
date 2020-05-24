@@ -18,7 +18,7 @@
   Powershell：java -jar "C:\Program Files\BurpSuiteCommunity\2020_2-burp-loader-helper.jar"
 
   4-打开burpsuite_community.jar
-  Powershell：java -noverify -javaagent:"C:\Program Files\BurpSuiteCommunity\burp-loader-helper.jar" -Xmx2048m -jar "C:\Program Files\BurpSuiteCommunity\burpsuite_community.jar"
+  Powershell：java -noverify -Xbootclasspath/p:"C:\Program Files\BurpSuiteCommunity\burp-loader-helper.jar" -Xmx2048m -jar "C:\Program Files\BurpSuiteCommunity\burpsuite_community.jar"
   
   5-取消协助，同意协议
   6-随意修改burp-loader-helper的License Text
@@ -32,7 +32,7 @@
 
 **bat_script**
 
-- `start "" "C:\Program Files (x86)\Common Files\Oracle\Java\javapath\java.exe" -noverify -javaagent:"C:\Program Files\BurpSuiteCommunity\burp-loader-helper.jar" -Xmx2048m -jar "C:\Program Files\BurpSuiteCommunity\burpsuite_community.jar"`
+- `start "" "C:\Program Files (x86)\Common Files\Oracle\Java\javapath\java.exe" -noverify -Xbootclasspath/p:"C:\Program Files\BurpSuiteCommunity\burp-loader-helper.jar" -Xmx2048m -jar "C:\Program Files\BurpSuiteCommunity\burpsuite_community.jar"`
 
 **TLS1.3和ipv4的问题**
 
@@ -49,8 +49,8 @@
   /usr/lib/jvm/java-8-openjdk-amd64/bin/java -jar 2020_2-burp-loader-helper.jar
 
   5-启动BurpSuiteCommunity
-  /usr/lib/jvm/java-8-openjdk-amd64/bin/java -Dfile.encoding=utf-8 -noverify -javaagent:/opt/BurpSuiteCommunity/burp-loader-helper.jar -Xmx2048m -jar /opt/BurpSuiteCommunity/burpsuite_community.jar
-
+  /usr/lib/jvm/java-8-openjdk-amd64/bin/java -Dfile.encoding=utf-8 -noverify -Xbootclasspath/p:/opt/BurpSuiteCommunity/burp-loader-helper.jar -Xmx2048m -jar /opt/BurpSuiteCommunity/burpsuite_community.jar
+  
   6-取消协助，同意协议
   7-随意修改burp-loader-helper的License Text
   8-把License复制到BurpSuite
